@@ -60,7 +60,7 @@ window.DATA = {
       {
         year: 2024,
         name: "Internet of Things - Course",
-        url: "https://github.com/Keevin16/IOT25",
+        url: "https://github.com/Lorenzo-Pigato/IOT_25",
         description: "Embedded and networked-sensor assignments taken in place of the IoT theory exam."
       },
       {
@@ -79,7 +79,7 @@ window.DATA = {
         year: 2023,
         name: "Algorithms & Data Structures — Final Project",
         url: "https://github.com/Keevin16/PFAPI23",
-        description: "A performance-graded C program, no external libraries, judged on time and memory: ~0.27s, ~16.8 MB peak."
+        description: "A performance-graded C program, no external libraries, on the test set judged on time and memory: ~0.27s, ~16.8 MB peak."
       }
     ]
   },
