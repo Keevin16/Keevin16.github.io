@@ -11,9 +11,10 @@ window.DATA = {
   about: {
     portrait: "assets/photo.jpg?v=2",
     paragraphs: [
-      "Hi, I'm **Kevin Abate**. I'm a MSc student in Computer Science & Engineering at Politecnico di Milano, on the Data Science & Software Engineering track.",
-      "I'm a graduate researcher at [NECSTLab](https://necst.it/), building multi-agent LLM systems for autonomous incident response in Kubernetes ([SRE-agent](https://github.com/martinimarcello00/SRE-agent)), with a deep-learning anomaly detector on Prometheus metrics exposed to the agents through a custom MCP tool. I like problems that span the stack and challenge myself, examples of that is the [RecSys challenge](https://github.com/Keevin16/RecSys_Challenge_2025), a full-stack [Flutter app](https://github.com/Keevin16/DivAid-DIMA) where I developped the back end, a [deep-learning model](https://github.com/Keevin16/ANN2DL-Polimi) were we did classification on time series and detection on WSI.",
-      "Expecting to graduate on Apr 2027, open to internships and new-grad roles in ML / MLOps / AIops / SE. Happy to chat."
+      "Hi, I'm **Kevin Abate**. I'm an MSc student in Computer Science & Engineering at Politecnico di Milano, on the Data Science & Software Engineering track.",
+      "I'm a graduate researcher at [NECSTLab](https://necst.it/), where I build multi-agent LLM systems for autonomous incident response in Kubernetes ([SRE-agent](https://github.com/martinimarcello00/SRE-agent)). I also work on a deep-learning anomaly detector for Prometheus metrics, which the agents access through a custom MCP tool ([k8s-observability-mcp](https://github.com/martinimarcello00/k8s-observability-mcp)).",
+      "I enjoy digging into hard problems: reading papers, understanding the stack, and iterating until it works. Examples include the [RecSys Challenge 2025](https://github.com/Keevin16/RecSys_Challenge_2025), a full-stack [Flutter app](https://github.com/Keevin16/DivAid-DIMA) where I developed the backend, and a [deep-learning project](https://github.com/Keevin16/ANN2DL-Polimi) on time-series classification and WSI detection.",
+      "I'm expecting to graduate in April 2027 and am open to internships and new-grad roles in MLOps, AIOps, SRE, and Software Engineering. Feel free to reach out."
     ]
   },
 
@@ -58,7 +59,7 @@ window.DATA = {
       },
       {
         year: 2024,
-        name: "Internet of Things — Course Challenges",
+        name: "Internet of Things - Course",
         url: "https://github.com/Keevin16/IOT25",
         description: "Embedded and networked-sensor assignments taken in place of the IoT theory exam."
       },
@@ -85,9 +86,9 @@ window.DATA = {
 
   experience: {
     work: [
-      { when: "Jun 2026 — present", where: "NECSTLab", url: "https://necst.it/", role: "Graduate Student Researcher — LLM agents for AIOps" },
-      { when: "Sep 2025 — present", where: "Google Developer Group PoliMi", url: "https://gdgaihack.com/", role: "Lead — GDG AI Hackathon, 10+ countries" },
-      { when: "Sep 2025 — Dec 2026", where: "Politecnico di Milano", role: "Teaching Assistant — Informatica A (current); previously Informatica B, Algoritmi e Principi dell'Informatica" }
+      { when: "Jun 2026 — present", where: "NECSTLab", url: "https://necst.it/", role: "Graduate Student Researcher — RCA for K8s clusters" },
+      { when: "Sep 2025 — present", where: "Google Developer Group PoliMi", url: "https://gdg.community.dev/gdg-on-campus-polytechnic-university-of-milan/", role: "Lead — GDG AI Hackathon (10+ countries) · now co-leading a team building an AI assistant for PoliMi students" },
+      { when: "Sep 2025 — Dec 2026", where: "Teaching Assistant @ Politecnico di Milano", role: "Informatica A (current); previously Informatica B, Algoritmi e Principi dell'Informatica" }
     ],
     education: [
       { when: "Sep 2024 — Apr 2027", where: "Politecnico di Milano", role: "M.Sc. Computer Science & Engineering — Data Science & Software Engineering" },
