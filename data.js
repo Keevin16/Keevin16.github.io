@@ -24,6 +24,7 @@ window.DATA = {
         year: 2026,
         name: "Autonomous Root Cause Analysis Agent",
         url: "https://github.com/martinimarcello00/SRE-agent",
+        status: "ongoing",
         mcp: "https://github.com/martinimarcello00/k8s-observability-mcp",
         description: "A multi-agent LLM system (LangGraph + MCP) that detects and localize incidents in Kubernetes clusters. Ongoing research at NECSTLab, paired with a custom Kubernetes-observability MCP server."
       },
@@ -31,18 +32,24 @@ window.DATA = {
         year: 2026,
         name: "DivAid — Expense-Splitting Mobile App",
         url: "https://github.com/Keevin16/DivAid-DIMA",
+        image: "assets/projects/divaid.webp",
+        imageAlt: "DivAid app screens: home, groups, group details and activity",
         description: "Full-stack Flutter app (Android / iOS / Web) for shared expenses: multi-currency balances, greedy debt minimisation, Stripe in-app wallet, LLaMA 4 Vision receipt OCR."
       },
       {
         year: 2026,
         name: "Laterizi D.S. — Company Website",
         url: "https://laterizids.it/",
+        image: "assets/projects/laterizi.webp",
+        imageAlt: "Laterizi D.S. website homepage",
         description: "Official commercial website and product catalog developed for a building materials and masonry supplier: custom database for product and inventory management, responsive design, performance optimization, and structured SEO metadata."
       },
       {
         year: 2025,
         name: "Deep Learning — Medical Imaging & Time Series",
         url: "https://github.com/Keevin16/ANN2DL-Polimi",
+        image: "assets/projects/ann2dl.webp",
+        imageAlt: "Whole-slide image with the four tiles selected for sub-typing, next to the validation confusion matrix over the four breast-cancer subtypes",
         description: "Two Kaggle competitions among ~200 teams. Top 5% on breast-cancer WSI sub-typing with pathology foundation models (UNI, Virchow2); top 20% on pain-level classification with a 1D-CNN + LSTM + self-attention hybrid."
       },
       {
@@ -55,24 +62,32 @@ window.DATA = {
         year: 2024,
         name: "Software Engineering II — Requirements & Design",
         url: "https://github.com/Keevin16/Software-Engineering-2",
+        image: "assets/projects/software-engineering-2.webp",
+        imageAlt: "Component diagram of the Students and Companies platform: managers, interfaces, web app and DBMS",
         description: "A full RASD and Design Document: use cases, domain assumptions, formal specification in Alloy, architecture and runtime views."
       },
       {
         year: 2024,
         name: "Internet of Things - Course",
         url: "https://github.com/Lorenzo-Pigato/IOT_25",
-        description: "Embedded and networked-sensor assignments taken in place of the IoT theory exam."
+        image: "assets/projects/iot.webp",
+        imageAlt: "Node-RED flows: CSV publisher, MQTT subscriber with filtering, rate limiting, charts and HTTP requests",
+        description: "Hands-on challenges taken in place of the IoT theory exam: an ESP32 sensor node in Arduino with energy and deep-sleep estimation, CoAP and MQTT packet capture and analysis in Wireshark, Node-RED MQTT flows, and high-level design of an IoT architecture."
       },
       {
         year: 2024,
         name: "Fixed-Point Exponential Filter",
         url: "https://github.com/Keevin16/Filtro-Esponenziale-Fixed-Point",
+        image: "assets/projects/fixed-point-filter.webp",
+        imageAlt: "Block diagram of the fixed-point exponential filter next to its timing diagram",
         description: "First-order exponential smoothing in fixed-point arithmetic, described and simulated in VHDL."
       },
       {
         year: 2023,
         name: "Codex Naturalis — Networked Board Game",
         url: "https://github.com/Keevin16/IS24-LB10",
+        image: "assets/projects/codex-naturalis.webp",
+        imageAlt: "Codex Naturalis running in the JavaFX GUI, the terminal CLI and the server console",
         description: "Client–server Java implementation of the board game: one jar runs either side, CLI or JavaFX, MVC with a Visitor dispatch. 97% line coverage on the model."
       },
       {

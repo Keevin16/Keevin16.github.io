@@ -37,10 +37,15 @@
     '</div><p class="email">Email: '+link('mailto:'+profile.email, profile.email, false)+'</p>';
 
   function projectItem(item) {
-    const title = item.url ? link(item.url,item.name) : '<strong>'+escape(item.name)+'</strong>';
+    const title = (item.url ? link(item.url,item.name) : '<strong>'+escape(item.name)+'</strong>')+
+      (item.status ? ' <span class="status">'+escape(item.status)+'</span>' : '');
     const extras = ['code','mcp','paper','post'].filter(key => item[key]).map(key => '['+link(item[key],key)+']');
     if (item.note) extras.push(inline(item.note));
-    return '<li><div>'+title+' <span class="secondary-links">'+extras.join(' ')+'</span></div><p>'+escape(item.description)+'</p></li>';
+    const image = item.image ? '<figure class="project-image">'+
+      (item.url ? '<a href="'+escape(safeURL(item.url))+'" target="_blank" rel="noopener noreferrer" tabindex="-1">' : '')+
+      '<img src="'+escape(safeURL(item.image))+'" alt="'+escape(item.imageAlt || item.name)+'" loading="lazy" decoding="async">'+
+      (item.url ? '</a>' : '')+'</figure>' : '';
+    return '<li><div>'+title+' <span class="secondary-links">'+extras.join(' ')+'</span></div><p>'+escape(item.description)+'</p>'+image+'</li>';
   }
   // group by year, newest first — robust to any item order in data.js
   const projectYears = [...new Set(data.projects.items.map(i => i.year))].sort((a,b) => b-a);

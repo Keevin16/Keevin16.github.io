@@ -23,6 +23,11 @@ const projects = nodes['#projects'].innerHTML;
 assert.strictEqual((projects.match(/<li>/g) || []).length, window.DATA.projects.items.length, 'one li per project');
 assert.match(projects, /\[<a href="https:\/\/github\.com\/martinimarcello00\/k8s-observability-mcp"[^>]*>mcp<\/a>\]/, 'secondary [mcp] link');
 assert.match(projects, /<a href="https:\/\/github\.com\/Keevin16\/DivAid-DIMA"[^>]*>DivAid[^<]*<\/a>/, 'DivAid links to own repo');
+const withImage = window.DATA.projects.items.filter(i => i.image);
+assert.strictEqual((projects.match(/<img /g) || []).length, withImage.length, 'one img per project with an image');
+for (const i of withImage) assert.ok(projects.includes('src="'+i.image+'" alt="'+i.imageAlt+'"'), 'image + alt for '+i.name);
+for (const i of withImage) assert.ok(require('fs').existsSync(i.image), 'image file exists: '+i.image);
+assert.match(projects, /SRE-agent"[^>]*>Autonomous Root Cause Analysis Agent<\/a> <span class="status">ongoing<\/span>/, 'ongoing tag next to RCA name');
 const years = [...new Set(window.DATA.projects.items.map(i => i.year))];
 for (const y of years) assert.match(projects, new RegExp('<h2>'+y+'</h2>'), 'year heading '+y);
 

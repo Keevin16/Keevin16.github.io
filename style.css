@@ -27,6 +27,11 @@ h1{font:600 15px/1.6 var(--mono);margin:0 0 25px}
 .project-list li{margin-bottom:25px}
 .project-list li:last-child{margin-bottom:0}
 .project-list p{font-size:12px;color:var(--muted);margin:3px 0 0}
+.status{display:inline-block;margin-left:4px;padding:0 6px;font-size:10px;line-height:1.7;color:var(--link);border:1px solid #b3c7ba;border-radius:3px;vertical-align:1px}
+.project-image{margin:12px 0 0}
+.project-image a{display:block}
+.project-image img{display:block;width:auto;max-width:100%;max-height:340px;height:auto;margin:0 auto 0 0;padding:10px;background:#fff;border:1px solid var(--rule);border-radius:4px;transition:border-color .15s}
+.project-image a:hover img{border-color:#b3c7ba}
 .secondary-links{font-size:11px;color:var(--muted);padding-left:6px}
 .secondary-links a{color:var(--muted)}
 
