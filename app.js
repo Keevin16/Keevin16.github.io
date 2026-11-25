@@ -57,7 +57,8 @@
   document.querySelector('#experience').innerHTML = '<h1>Experience</h1>'+
     section('Work & Teaching', '<ul class="experience-list">'+data.experience.work.map(row).join('')+'</ul>')+
     section('Education', '<ul class="experience-list">'+data.experience.education.map(row).join('')+'</ul>')+
-    section('Awards', '<ul class="service-list">'+data.experience.awards.map(a => '<li>'+escape(a)+'</li>').join('')+'</ul>');
+    section('Awards', '<ul class="service-list">'+data.experience.awards.map(a => '<li>'+inline(a)+'</li>').join('')+'</ul>')+
+    section('Languages', '<ul class="service-list">'+data.experience.languages.map(a => '<li>'+inline(a)+'</li>').join('')+'</ul>');
 
   document.querySelector('#skills').innerHTML = '<h1>Skills</h1><ul class="experience-list">'+
     data.skills.groups.map(g => '<li><span class="experience-date">'+escape(g.name)+'</span><div>'+escape(g.items)+'</div></li>').join('')+'</ul>';

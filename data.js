@@ -30,6 +30,13 @@ window.DATA = {
       },
       {
         year: 2026,
+        name: "VINCI — AI Assistant for PoliMi Students",
+        url: "https://github.com/GDG-polimi/vinci-scraper",
+        status: "ongoing",
+        description: "Co-leading the GDG PoliMi team building VINCI, a RAG assistant over public Politecnico information. I work on its data pipeline: an async crawler (sitemap seeding, robots.txt, per-host rate limits) that extracts pages and linked PDFs"
+      },
+      {
+        year: 2026,
         name: "DivAid — Expense-Splitting Mobile App",
         url: "https://github.com/Keevin16/DivAid-DIMA",
         image: "assets/projects/divaid.webp",
@@ -50,13 +57,15 @@ window.DATA = {
         url: "https://github.com/Keevin16/ANN2DL-Polimi",
         image: "assets/projects/ann2dl.webp",
         imageAlt: "Whole-slide image with the four tiles selected for sub-typing, next to the validation confusion matrix over the four breast-cancer subtypes",
-        description: "Two Kaggle competitions among ~200 teams. Top 5% on breast-cancer WSI sub-typing with pathology foundation models (UNI, Virchow2); top 20% on pain-level classification with a 1D-CNN + LSTM + self-attention hybrid."
+        description: "Two Kaggle competitions among ~200 teams. Top 5% on breast-cancer WSI sub-typing with pathology foundation models (UNI, Virchow2). Top 20% on pain-level classification with a 1D-CNN + LSTM + self-attention hybrid."
       },
       {
         year: 2025,
         name: "Recommender System — Hybrid Stacking",
         url: "https://github.com/Keevin16/RecSys_Challenge_2025",
-        description: "7th of 70+ teams on the PoliMi RecSys 2025 Challenge (27k users, 7k items). Collaborative-filtering candidate generation re-ranked by XGBoost, tuned with Optuna on MAP@10, hot paths in Cython."
+        image: "assets/projects/recsys.webp",
+        imageAlt: "Two-stage stacking recommender: RP3beta, SLIM, Mult-VAE and UserKNN generate candidates, whose features are re-ranked by an Optuna-tuned XGBRanker for Recall@20",
+        description: "7th of 70+ teams on the PoliMi RecSys 2025 Challenge (27k users, 7k items). Collaborative-filtering candidate generation re-ranked by XGBoost, tuned with Optuna on Recall@20, hot paths in Cython."
       },
       {
         year: 2024,
@@ -72,7 +81,7 @@ window.DATA = {
         url: "https://github.com/Lorenzo-Pigato/IOT_25",
         image: "assets/projects/iot.webp",
         imageAlt: "Node-RED flows: CSV publisher, MQTT subscriber with filtering, rate limiting, charts and HTTP requests",
-        description: "Hands-on challenges taken in place of the IoT theory exam: an ESP32 sensor node in Arduino with energy and deep-sleep estimation, CoAP and MQTT packet capture and analysis in Wireshark, Node-RED MQTT flows, and high-level design of an IoT architecture."
+        description: "Hands-on challenges taken in place of the IoT exam: an ESP32 sensor node in Arduino with energy and deep-sleep estimation, CoAP and MQTT packet capture and analysis in Wireshark, Node-RED MQTT flows, and high-level design of an IoT architecture."
       },
       {
         year: 2024,
@@ -94,7 +103,7 @@ window.DATA = {
         year: 2023,
         name: "Algorithms & Data Structures — Final Project",
         url: "https://github.com/Keevin16/PFAPI23",
-        description: "A performance-graded C program, no external libraries, on the test set judged on time and memory: ~0.27s, ~16.8 MB peak."
+        description: "A performance-graded C program where i got 30L/30, no external libraries, on the test set judged on time and memory: ~0.27s, ~16.8 MB peak."
       }
     ]
   },
@@ -102,7 +111,7 @@ window.DATA = {
   experience: {
     work: [
       { when: "Jun 2026 — present", where: "NECSTLab", url: "https://necst.it/", role: "Graduate Student Researcher — RCA for K8s clusters" },
-      { when: "Sep 2025 — present", where: "Google Developer Group PoliMi", url: "https://gdg.community.dev/gdg-on-campus-polytechnic-university-of-milan/", role: "Lead — GDG AI Hackathon (10+ countries) · now co-leading a team building an AI assistant for PoliMi students" },
+      { when: "Sep 2025 — present", where: "Google Developer Group PoliMi", url: "https://gdg.community.dev/gdg-on-campus-polytechnic-university-of-milan/", role: "Lead — GDG AI Hackathon (10+ countries)" },
       { when: "Sep 2025 — Dec 2026", where: "Teaching Assistant @ Politecnico di Milano", role: "Informatica A (current); previously Informatica B, Algoritmi e Principi dell'Informatica" }
     ],
     education: [
@@ -110,10 +119,14 @@ window.DATA = {
       { when: "Sep 2021 — Jul 2024", where: "Politecnico di Milano", role: "B.Sc. Computer Science Engineering" }
     ],
     awards: [
+      "1st place — [Reply Student Clash](https://studentclash.reply.com/) hackathon @ Politecnico di Milano, with [PreCooked](https://github.com/Keevin16/StudentClash-PreCooked).",
       "Kaggle — Top 5% (F1 0.447), breast-cancer WSI sub-typing with pathology foundation models, ~200 teams.",
       "Kaggle — Top 20% (F1 0.92), multivariate time-series pain-level classification, ~200 teams.",
-      "7th place / 70+ teams — Politecnico di Milano Recommender Systems 2025 Challenge.",
-      "Languages: Italian (native), English (fluent, English-taught M.Sc.)."
+      "7th place / 70+ teams — Politecnico di Milano Recommender Systems 2025 Challenge."
+    ],
+    languages: [
+      "Italian (native)",
+      "English (fluent, English-taught M.Sc.)"
     ]
   },
 

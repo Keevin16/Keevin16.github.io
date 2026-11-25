@@ -44,7 +44,8 @@ h1{font:600 15px/1.6 var(--mono);margin:0 0 25px}
 .experience-list strong{font-weight:500}
 .experience-list p{color:var(--muted);font-size:11px;margin:1px 0 0}
 .experience-date{color:var(--muted);font-size:11px}
-.service-list li{margin-bottom:7px;color:#70786f;font-size:12px}
+.service-list li{margin-bottom:12px;color:#70786f;font-size:12px;padding-left:16px;text-indent:-16px}
+.service-list li::before{content:"—";display:inline-block;width:16px;text-indent:0;color:var(--muted)}
 .service-list li:last-child{margin-bottom:0}
 
 footer{display:flex;flex-wrap:wrap;align-items:center;gap:17px;margin-top:55px;font-size:11px;color:var(--muted)}
